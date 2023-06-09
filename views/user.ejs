@@ -5,7 +5,7 @@
   <div class="container">
     <div class="profile">
       <img src="profile-picture.jpg" alt="Profile Picture">
-      <h1>John Doe</h1>
+      <h1><%= user.name %></h1>
       <p>Web Developer</p>
     </div>
     
@@ -14,9 +14,9 @@
     
     <h2>Contact Information</h2>
     <ul>
-      <li>Email: john.doe@example.com</li>
-      <li>Phone: +1 123-456-7890</li>
-      <li>Website: <a href="http://www.example.com">www.example.com</a></li>
+      <li>Email: <%=user.email%></li>
+      <li>Join: <%=user.createdAt%></li>
+      <li>Age: <%=user.age%></li>
     </ul>
   </div>
 </body>
