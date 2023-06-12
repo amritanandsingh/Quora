@@ -47,6 +47,12 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
+app.use((req,res,next)=>{
+    //console.log(req.user);
+    res.locals.user = req.user;
+    next();
+});
+
 app.use('/',require('./routes'));                   
 
 app.listen(port , function(err){

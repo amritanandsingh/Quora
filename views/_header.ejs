@@ -7,27 +7,28 @@
     <ul>
       
    
-      <li><h4>Welcome </h4></li>
+      
 
 
-      <% if (locals.User) { %>
-        <li>it has user</li>
-        <p><%=User.name%></p>
+      <% if (locals.user) { %>
+        <li><h3>Welcome ! </h3></li>
+        <li><b><%=user.name%></b></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/users/profile">Profile</a></li>
+        <li><a href="#">Notifications</a></li>
+        <li><a href="#">Messages</a></li>
+        <li><a href="#">Explore</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="/users/sign-out">Sign-out</a></li>
+        
       <% } else { %>
-        <li>it doesn't have user</li>
+        <li><a href="/users/sign-up">Sign-up</a></li>
+        <li><a href="/users/sign-in">Sign-in</a></li>
+        
       <% } %>
       
-      <li><a href="/">Home</a></li>
-      <li><a href="/users/profile">Profile</a></li>
-      <li><a href="#">Notifications</a></li>
-      <li><a href="#">Messages</a></li>
-      <li><a href="#">Explore</a></li>
-      <li><a href="#">Settings</a></li>
-      <li><a href="/users/sign-out">Sign-out</a></li>
       
-      <li><a href="/users/sign-up">Sign-up</a></li>
-      <li><a href="/users/sign-in">Sign-in</a></li>
-      
+     
     </ul>
 
   </nav>
