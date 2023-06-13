@@ -2,6 +2,17 @@
 
 <main class="main-content">
   <h2>Welcome to Quora</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pretium felis nec turpis interdum, sit amet scelerisque dolor faucibus.</p>
+  
+  <section>
+    <form action="/posts/create" id="new-post-form" method="POST">
+        <h4>Create a Post</h4>
+        <p>Your question</p>
+        <input type="text" id="title" name="title" value=""><br>
+        <p>Your answer</p>
+        <textarea name="content" cols="30" rows="3"></textarea>
+        <input type="submit" value="Post">
+    </form>
+</section>
 
+  <h4>Posts</h4>
 </main>

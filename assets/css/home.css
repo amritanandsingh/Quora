@@ -16,3 +16,45 @@
 .main-content p {
   color: #666;
 }
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+p {
+  margin: 10px 0;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
