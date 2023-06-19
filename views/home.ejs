@@ -1,9 +1,8 @@
 <link rel="stylesheet" href="/css/home.css">
 
 <main class="main-content">
-  <h2>Welcome to Quora</h2>
   
-  <section>
+<section>
     <form action="/posts/create" id="new-post-form" method="POST">
         <h4>Create a Post</h4>
         <p>Your question</p>
@@ -13,6 +12,23 @@
         <input type="submit" value="Post">
     </form>
 </section>
+<h4>Posts</h4>
+<div id="posts-list-container">
+  <ul>
+    <% for(post of posts) { %>
+      <li class="post-item">
+        <div class="question">
+          <%= post.title %>
+        </div>
+        <div class="author">
+          By <%= post.user.name %>
+        </div>
+        <div class="answer">
+          <%= post.content %>
+        </div>
+      </li>
+    <% } %>
+  </ul>
+</div>
 
-  <h4>Posts</h4>
 </main>

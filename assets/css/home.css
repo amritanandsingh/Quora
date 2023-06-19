@@ -58,3 +58,29 @@ input[type="submit"]:hover {
   background-color: #0056b3;
 }
 
+/* css for display post*/
+/* Style for the post item */
+.post-item {
+  margin-bottom: 20px;
+}
+
+/* Style for the question */
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #eb5c5c;
+  padding: 10px;
+}
+
+/* Style for the author */
+.author {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Style for the answer */
+.answer {
+  font-size: 16px;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
